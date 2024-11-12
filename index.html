@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Gourmet</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Header con navegación -->
+    <header>
+        <div class="logo">
+            <h1>Restaurante Gourmet</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#video">Inicio</a></li>
+                <li><a href="#contacto">Reservas</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#galeria">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de video con texto -->
+    <section id="video" class="seccion-video">
+        <video autoplay muted loop>
+            <source src="material/video.mp4" type="video/mp4">            
+            Tu navegador no soporta la reproducción de video.
+        </video>
+        <div class="texto-video">
+            <h2>Bienvenidos </h2>
+            <p>Experimenta sabores únicos en un ambiente distinguido y acogedor.</p>
+        </div>
+    </section>
+
+    <!-- Sección de contacto y formulario de reserva -->
+    <section id="contacto" class="seccion">
+        <div class="contacto-imagen">
+            <img src="material/table.jpg" alt="Imagen del Restaurante">
+        </div>
+        <div class="contacto-formulario">
+            <h2>Reserva tu mesa</h2>
+            <form action="reserva.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+ <!-- Sección Ubícanos -->
+<section id="ubicacion" class="seccion">
+    <h2>Ubícanos</h2>
+    <p>Dirección: Avenida Salaverry 2625, Lima, Perú</p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.1110628325425!2d-77.04647298518488!3d-12.091487245903955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8bd6bb37c1b%3A0x7f4b6f1e8f7b4ae5!2sAvenida%20Salaverry%202625%2C%20Jes%C3%BAs%20Mar%C3%ADa%2015076%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sus!4v1699795241723!5m2!1ses-419!2sus" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</section>
+
+    
+
+    <!-- Sección de Galería -->
+    <section id="galeria" class="seccion">
+        <h2>Galería</h2>
+        <div class="galeria">
+            <div class="foto" style="background-image: url('material/foto1.jpg');"></div>
+            <div class="foto" style="background-image: url('material/foto2.jpg');"></div>
+            <div class="foto" style="background-image: url('material/foto3.jpg');"></div>
+            <div class="foto" style="background-image: url('material/foto4.jpg');"></div>
+            <div class="foto" style="background-image: url('material/foto5.jpg');"></div>
+            <div class="foto" style="background-image: url('material/foto6.jpg');"></div>
+            <div class="foto" style="background-image: url('material/foto7.jpg');"></div>
+            <div class="foto" style="background-image: url('material/foto8.jpg');"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Restaurante Gourmet</p>
+        <p>Contacto: info@restaurantegourmet.com | Tel: (01) 123-4567</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
